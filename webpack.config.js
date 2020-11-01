@@ -17,7 +17,12 @@ module.exports = {
                             "@babel/preset-env"
                         ],
                         plugins: [
-                            "@babel/plugin-transform-react-jsx"
+                            [
+                                "@babel/plugin-transform-react-jsx",
+                                {
+                                    pragma: "createElement"
+                                }
+                            ]
                         ]
                     }
                 }
