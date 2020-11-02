@@ -5,9 +5,17 @@ for(let i of [1, 2, 3]) {
 }
 
 class MyComponent extends Component {
+    constructor() {
+        super();
+        this.state = {
+            a: 1,
+            b: 2
+        }
+    }
     render() {
         return <div>
             <h1>my_component</h1>
+            <span>{this.state.a.toString()}</span>
             {this.children}
             </div>
     }
