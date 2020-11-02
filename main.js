@@ -6,7 +6,10 @@ for(let i of [1, 2, 3]) {
 
 class MyComponent extends Component {
     render() {
-        return <div>my_component</div>
+        return <div>
+            <h1>my_component</h1>
+            {this.children}
+            </div>
     }
 }
 
